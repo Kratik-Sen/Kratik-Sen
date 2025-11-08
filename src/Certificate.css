@@ -328,3 +328,30 @@
 .certificate-card:hover .card-hover-image {
   bottom: 0;
 }
+
+/* Hide hover-tip text on mobile and tablet */
+@media (max-width: 1024px) {
+  .hover-tip {
+    display: none;
+  }
+}
+
+/* Hide hover image on mobile and tablet */
+@media (max-width: 1024px) {
+  .card-hover-image {
+    display: none !important;
+  }
+}
+
+/* Optional: Ensure card layout stays neat when hover image is hidden */
+@media (max-width: 1024px) {
+  .certificate-card {
+    position: relative;
+    overflow: visible; /* prevent clipping */
+  }
+  .card-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}

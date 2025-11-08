@@ -37,12 +37,17 @@ const Nav = () => {
   return (
     <nav ref={navRef}>
       <h1 className="hover-underline">Kratik Sen</h1>
-      
+
+      {/* Toggle between burger and cross icon */}
       <div className="burger-icon" onClick={toggleMenu}>
-        <i className="ri-menu-3-line"></i>
+        {isMenuOpen ? (
+          <i className="ri-close-circle-line"></i>
+        ) : (
+          <i className="ri-menu-3-line"></i>
+        )}
       </div>
 
-      <div className={`part2 ${isMenuOpen ? 'active' : ''}`}>
+      <div className={`part2 ${isMenuOpen ? "active" : ""}`}>
         <h4 className="hover-underline" onClick={() => scrollToSection("about")}>
           About Me
         </h4>
@@ -81,10 +86,11 @@ const Nav = () => {
         >
           Download Resume
         </button>
+
         <h4>
-          <a 
-            href="https://github.com/Kratik-Sen" 
-            target="_blank" 
+          <a
+            href="https://github.com/Kratik-Sen"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <i className="ri-github-fill"></i>
@@ -92,9 +98,9 @@ const Nav = () => {
         </h4>
 
         <h4>
-          <a 
-            href="https://www.linkedin.com/in/kratik-sen" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/kratik-sen"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <i className="ri-linkedin-box-fill"></i>
