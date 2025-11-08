@@ -1,0 +1,125 @@
+button {
+  --baseColor: #d21cad;
+  --fillerColor: #219d6c;
+  --baseTextColor: #ffefda;
+  --hoverTextColor: #ffefda;
+
+  appearance: none;
+  border: 0;
+  max-width: 100%;
+  background: var(--baseColor);
+  color: var(--baseTextColor);
+  padding: 0 30px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  cursor: pointer;
+}
+
+.button__text {
+  display: block;
+  transform: translate(0, 0);
+  z-index: 2;
+  position: relative;
+}
+
+.button__filler {
+  background: var(--fillerColor);
+  position: absolute;
+  width: 150%;
+  height: 200%;
+  border-radius: 50%;
+  top: -50%;
+  left: -25%;
+  transform: translate3d(0, 75%, 0);
+  z-index: 1;
+}
+
+.hover-in .button__text {
+  animation: textHoverIn 0.3s forwards;
+}
+.hover-in .button__filler {
+  animation: fillerHoverIn 0.3s forwards;
+}
+
+.hover-out .button__text {
+  animation: textHoverOut 0.3s forwards;
+}
+.hover-out .button__filler {
+  animation: fillerHoverOut 0.3s forwards;
+}
+
+/* 🌀 Animations */
+@keyframes textHoverIn {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translate(0, -100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    color: var(--hoverTextColor);
+  }
+}
+
+@keyframes textHoverOut {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translate(0, 100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fillerHoverIn {
+  0% {
+    transform: translate3d(0, 75%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fillerHoverOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -75%, 0);
+  }
+}
+
+/* When button is disabled */
+.disabled-btn {
+  cursor: not-allowed;
+  opacity: 0.7;
+  position: relative;
+}
+
+/* Block icon (hidden by default) */
+.block-icon {
+  margin-left: 8px;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show block icon on hover when disabled */
+.disabled-btn:hover .block-icon {
+  opacity: 1;
+}

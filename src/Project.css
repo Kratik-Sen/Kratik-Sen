@@ -1,0 +1,242 @@
+ .projects-section {
+          width: 100%;
+          min-height: 100vh;
+          background: linear-gradient(180deg, #0a0a0f 0%, #1a1a2e 100%);
+          padding: 80px 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .projects-container {
+          max-width: 1400px;
+          width: 100%;
+        }
+
+        .projects-header {
+          margin-bottom: 60px;
+          cursor: pointer;
+        }
+
+        .section-label {
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #a0a0a0;
+          margin-bottom: 16px;
+        }
+
+        .section-title {
+          font-size: 64px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 24px;
+          line-height: 1.2;
+        }
+
+        .section-description {
+          font-size: 16px;
+          line-height: 1.8;
+          color: #b0b0b0;
+          max-width: 800px;
+        }
+
+        .projects-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 40px;
+          padding: 20px 0;
+        }
+
+        .project-card {
+          background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+          overflow: hidden;
+          transition: all 0.3s ease;
+          transform-style: preserve-3d;
+          cursor: pointer;
+          position: relative;
+            will-change: transform, box-shadow;
+  contain: layout paint; 
+        }
+
+        .project-card:hover {
+          border-color: rgba(0, 217, 255, 0.6);
+          box-shadow: 0 0 40px rgba(0, 217, 255, 0.4),
+                      0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-card::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          background: linear-gradient(45deg, #00d9ff, #7b2ff7, #f107a3, #00d9ff);
+          border-radius: 20px;
+          opacity: 0;
+          z-index: -1;
+          transition: opacity 0.3s ease;
+          animation: rotate-border 3s linear infinite;
+          background-size: 300% 300%;
+        }
+
+        .project-card:hover::before {
+          opacity: 0.5;
+        }
+
+        @keyframes rotate-border {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        .project-image-wrapper {
+         position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden; /* ensures the scaled image never shows outside */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* add this line */
+  mask-image: radial-gradient(white 100%, transparent 100%);
+  -webkit-mask-image: radial-gradient(white 100%, transparent 100%);
+        }
+        
+
+        .project-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image {
+          transform: scale(1.1);
+        }
+
+        .project-links {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          display: flex;
+          gap: 12px;
+          opacity: 0;
+          transform: translateY(-10px);
+          transition: all 0.3s ease;
+        }
+
+        .project-card:hover .project-links {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .project-link-icon {
+          width: 44px;
+          height: 44px;
+          background: rgba(0, 0, 0, 0.8);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          transition: all 0.3s ease;
+          text-decoration: none;
+        }
+
+        .project-link-icon:hover {
+          background: rgba(0, 217, 255, 0.2);
+          border-color: #00d9ff;
+          color: #00d9ff;
+          transform: scale(1.1);
+        }
+
+        .project-content {
+          padding: 30px;
+        }
+
+        .project-title {
+          font-size: 28px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 12px;
+        }
+
+        .project-description {
+          font-size: 15px;
+          line-height: 1.6;
+          color: #b0b0b0;
+          margin-bottom: 20px;
+        }
+
+        .project-technologies {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .tech-tag {
+          font-size: 13px;
+          font-weight: 600;
+          color: #00d9ff;
+          background: rgba(0, 217, 255, 0.1);
+          padding: 6px 14px;
+          border-radius: 20px;
+          border: 1px solid rgba(0, 217, 255, 0.3);
+          transition: all 0.3s ease;
+        }
+
+        .tech-tag:hover {
+          background: rgba(0, 217, 255, 0.2);
+          border-color: #00d9ff;
+          transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+          .projects-section {
+            padding: 60px 20px;
+          }
+
+          .section-title {
+            font-size: 48px;
+          }
+
+          .projects-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+          }
+
+          .project-card {
+            transform: none !important;
+          }
+
+          .project-links {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (max-width: 480px) {
+          .section-title {
+            font-size: 36px;
+          }
+
+          .project-title {
+            font-size: 24px;
+          }
+
+          .section-description {
+            font-size: 14px;
+          }
+        }

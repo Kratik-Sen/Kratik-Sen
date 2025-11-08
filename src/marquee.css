@@ -1,0 +1,92 @@
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Make canvas fill the space */
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  position: relative;
+  z-index: 1; /* Lower than marquee */
+  cursor: pointer;
+}
+
+
+.marquee-container {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  background: transparent;
+  opacity: 0; /* Start hidden, will be animated by GSAP */
+  z-index: 10; /* Ensure it appears above canvas */
+
+/* fade edges (shadow on left and right only) */
+mask-image: linear-gradient(
+  to right,
+  transparent 0%,
+  rgba(0, 0, 0, 0.7) 10%,
+  rgba(0, 0, 0, 1) 25%,
+  rgba(0, 0, 0, 1) 75%,
+  rgba(0, 0, 0, 0.7) 90%,
+  transparent 100%
+);
+-webkit-mask-image: linear-gradient(
+  to right,
+  transparent 0%,
+  rgba(0, 0, 0, 0.7) 10%,
+  rgba(0, 0, 0, 1) 25%,
+  rgba(0, 0, 0, 1) 75%,
+  rgba(0, 0, 0, 0.7) 90%,
+  transparent 100%
+);
+
+}
+
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollMarquee 12s linear infinite;
+}
+
+/* Constant glowing text */
+.marquee-track h1 {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+
+  /* Constant neon glow */
+  text-shadow:
+    0 0 10px rgb(128, 117, 117),
+    0 0 20px rgba(139, 136, 136, 0.9),
+    0 0 40px rgba(255, 255, 255, 0.8),
+    0 0 80px rgba(255, 255, 255, 0.6);
+}
+
+/* Continuous movement */
+@keyframes scrollMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive scaling */
+@media (max-width: 768px) {
+  .marquee-track h1 {
+    font-size: 60px;
+  }
+}

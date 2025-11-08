@@ -1,0 +1,282 @@
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a0a0f 0%, #1a1a2e 100%);
+  padding: 80px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.about-header {
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+
+.introduction-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+}
+
+.about-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 900px;
+}
+
+/* Rocket text effect */
+.rocket-char {
+  display: inline-block;
+  transition: color 0.2s ease;
+  cursor: default;
+}
+
+.rocket-char:hover {
+  color: #00d9ff;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ---- HOLOGRAPHIC CARD ---- */
+.holographic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.holographic-card {
+  width: 300px;
+  height: 200px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* ✨ Animated border outline */
+.holographic-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(270deg,
+    var(--glow-color, #0ff),
+    #000,
+    var(--glow-color, #0ff),
+    #000
+  );
+  background-size: 300% 300%;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: borderMove 5s linear infinite;
+  z-index: 1;
+}
+
+/* Smooth moving gradient around the border */
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Centered text */
+.holographic-card h2 {
+  color: var(--glow-color, #0ff);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease;
+}
+
+/* Image transitions */
+.holographic-card img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Hover Animations */
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--glow-color, #0ff);
+}
+
+/* Hover image + text behavior */
+.holographic-card:hover img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.holographic-card:hover h2 {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 60px 40px;
+  }
+
+  .about-header {
+    margin-bottom: 60px;
+  }
+
+  .about-title {
+    font-size: 48px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .holographic-card {
+    width: 280px;
+    height: 180px;
+  }
+
+  .holographic-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .cards-container {
+    gap: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .about-header {
+    margin-bottom: 40px;
+  }
+
+  .introduction-label {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .holographic-card {
+    width: 260px;
+    height: 170px;
+  }
+
+  .holographic-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .cards-container {
+    gap: 25px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 15px;
+  }
+
+  .about-header {
+    margin-bottom: 30px;
+  }
+
+  .introduction-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .about-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .holographic-card {
+    width: 240px;
+    height: 160px;
+  }
+
+  .holographic-card h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .cards-container {
+    gap: 20px;
+  }
+}
