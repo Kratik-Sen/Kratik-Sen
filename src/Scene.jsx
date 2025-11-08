@@ -37,6 +37,25 @@ export const Scene = ({ userRotationX = 0, userRotationY = 0 }) => {
     return () => clearTimeout(timer)
   }, [tex])
 
+  // ✅ Added: mobile-only cylinder scaling (without changing existing values)
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        if (cyl.current) {
+          cyl.current.scale.set(0.7, 0.7, 0.7) // smaller on mobile
+        }
+      } else {
+        if (cyl.current) {
+          cyl.current.scale.set(1, 1, 1) // normal on tablet & desktop
+        }
+      }
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <>
       {/* Starfield background - render first so it's behind */}

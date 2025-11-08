@@ -86,7 +86,15 @@ const Nav = () => {
         >
           Download Resume
         </button>
-
+   <h4>
+          <a
+            href="https://www.linkedin.com/in/kratik-sen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="ri-linkedin-box-fill"></i>
+          </a>
+        </h4>
         <h4>
           <a
             href="https://github.com/Kratik-Sen"
@@ -97,15 +105,7 @@ const Nav = () => {
           </a>
         </h4>
 
-        <h4>
-          <a
-            href="https://www.linkedin.com/in/kratik-sen"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="ri-linkedin-box-fill"></i>
-          </a>
-        </h4>
+     
       </div>
     </nav>
   );

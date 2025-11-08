@@ -102,5 +102,3 @@ function App() {
 export default App
 
 
-// Front end competition Create Modern Websites HTML CSS JS GSAP ScrollTrigger Locomotive.js Front end competition
-//               Create Modern Websites HTML CSS JS GSAP ScrollTrigger Locomotive.js
