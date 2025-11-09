@@ -1,19 +1,35 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import StyledStarsCanvas from "./Star.jsx";
 import EarthCanvas from "./Earth.jsx";
 import "./Contact.css";
-import "./Button.css"; 
-import "remixicon/fonts/remixicon.css"; // ✅ Import icon set
+import "./Button.css";
+import "remixicon/fonts/remixicon.css";
 
 const Contact = () => {
   const form = useRef();
   const [hoverState, setHoverState] = useState("hover-out");
   const [sending, setSending] = useState(false);
+  const [showEarth, setShowEarth] = useState(true); // 🌍 control visibility
 
   const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 960) {
+        setShowEarth(false); // hide for mobile & tablet
+      } else {
+        setShowEarth(true); // show for desktop
+      }
+    };
+
+    handleResize(); // run once on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -69,7 +85,6 @@ const Contact = () => {
               required
             ></textarea>
 
-            {/* ✨ Button with Blocking Feature */}
             <button
               type="submit"
               className={`${hoverState} ${sending ? "disabled-btn" : ""}`}
@@ -91,10 +106,12 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Right Section */}
-        <div className="contact-right">
-          <EarthCanvas />
-        </div>
+        {/* Right Section (hidden on mobile & tablet) */}
+        {showEarth && (
+          <div className="contact-right">
+            <EarthCanvas />
+          </div>
+        )}
       </div>
     </div>
   );
