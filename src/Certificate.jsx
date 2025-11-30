@@ -75,7 +75,7 @@ export default function Certificate() {
       organization: 'simplilearn',
       date: '19th October 2025',
       logo: './sl.jpeg',
-      hoverImage: '/skillup.jpg
+      hoverImage: '/skillup.jpg',
       description: [
         'Gained strong understanding of core data structures like arrays, stacks, queues, and linked lists.',
         'Learned algorithmic techniques including searching, sorting, and recursion.',
@@ -104,7 +104,7 @@ export default function Certificate() {
                   <h3 className="cert-title">{cert.title}</h3>
                  <div className="cert-organization">
   {cert.organization}
-  <span className="hover-tip"> (HOVER ME TO SEE CERTIFICATE)</span>
+  <span className="hover-tip"> (HOVER OR TOUCH ME TO SEE CERTIFICATE)</span>
 </div>
                   <ul className="cert-description">
                     {cert.description.map((point, i) => (
