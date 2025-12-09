@@ -33,7 +33,7 @@ export default function Certificate() {
       organization: 'freeCodeCamp',
       date: '3 November 2025',
       logo: './fcc.png',
-      hoverImage: 'https://media.licdn.com/dms/image/v2/D4E22AQGEsvD_wBrX5A/feedshare-shrink_800/B4EZpGRW5QKoAg-/0/1762115548098?e=1764201600&v=beta&t=RMthib1Hp5EOD7Rki55XWK1KTMrjhe1OITMHuXD1bjE',
+      hoverImage: '/fccCertificate.jpg',
       description: [
         'Built RESTful APIs using Node.js and Express.',
         'Integrated MongoDB for database management and CRUD operations.',
@@ -47,7 +47,7 @@ export default function Certificate() {
       organization: 'Oracle',
       date: '20th October 2025',
       logo: './oracle.png',
-      hoverImage: 'https://media.licdn.com/dms/image/v2/D4E22AQE55azz1-I1kg/feedshare-shrink_800/B4EZoF8QwHIMAk-/0/1761036276663?e=1764201600&v=beta&t=fgG8oy6hpadlfjraNbRo6GyIQz9ibJacWpj4nXb1FLE',
+      hoverImage: '/oracleCertificate.jpg',
       description: [
         'Gained foundational knowledge of AI, machine learning, and data science concepts.',
         'Learned to build, train, and deploy AI models using Oracle Cloud services.',
@@ -61,7 +61,7 @@ export default function Certificate() {
       organization: 'TCS iON',
       date: '23 October - 4 November 2025',
       logo: './tcsion.png',
-      hoverImage: 'https://media.licdn.com/dms/image/v2/D4E2DAQH-s3RsTfrH1Q/profile-treasury-image-shrink_800_800/B4EZpLRvG7HMAY-/0/1762199534087?e=1763074800&v=beta&t=WIUYvT1oZASthYL_Lwc9YlqWLf_oGt8_rcMcm7HTXf4',
+      hoverImage: '/tcsionCertificate.jpg',
       description: [
         'Developed strong communication, presentation, and interpersonal skills.',
         'Learned essential corporate etiquette and workplace behavior.',
@@ -75,7 +75,7 @@ export default function Certificate() {
       organization: 'simplilearn',
       date: '19th October 2025',
       logo: './sl.jpeg',
-      hoverImage: 'https://media.licdn.com/dms/image/v2/D4E2DAQHWho1yh9YJWw/profile-treasury-document-cover-images_480/B4EZn76ORpJABI-/0/1760867972657?e=1763074800&v=beta&t=Kx5mpZuVFUjHA2GX7tFNWhOYIZm4cqQpG-LrWkWM5Jk',
+      hoverImage: '/skillup.jpg',
       description: [
         'Gained strong understanding of core data structures like arrays, stacks, queues, and linked lists.',
         'Learned algorithmic techniques including searching, sorting, and recursion.',
@@ -104,7 +104,7 @@ export default function Certificate() {
                   <h3 className="cert-title">{cert.title}</h3>
                  <div className="cert-organization">
   {cert.organization}
-  <span className="hover-tip"> (HOVER ME TO SEE CERTIFICATE)</span>
+  <span className="hover-tip"> (HOVER OR TOUCH ME TO SEE CERTIFICATE)</span>
 </div>
                   <ul className="cert-description">
                     {cert.description.map((point, i) => (
