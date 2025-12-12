@@ -41,7 +41,7 @@ where users can browse, book, and manage stays. Implemented property listings, u
       id: 4,
       title: 'OpenShelf',
       description: 'OpenShelf is a modern platform where users can upload, buy, and read books effortlessly. It offers seamless PDF viewing, easy book management, and a clean interface that connects readers and creators, making digital reading more accessible and enjoyable for everyone.',
-      image: '/openshelf.png',
+      image: './openshelf.png',
       technologies: ['#MERN' , '#javascript' ,'#restapi', '#CSS' , '#HTML'],
       liveLink: 'https://openshelf-frontend.vercel.app/',
       githubLink: 'https://github.com/Kratik-Sen/Openshelf-frontend'
@@ -51,7 +51,7 @@ where users can browse, book, and manage stays. Implemented property listings, u
       id: 5,
       title: 'Rankit',
       description: 'RankIt lets users compare two photos with a simple click, instantly scoring them using the Elo rating system. The platform updates a live leaderboard, making photo ranking fun, competitive, and dynamic while helping creators understand which images stand out the most.',
-      image: '/rankit.png',
+      image: './rankit.png',
       technologies: ['#MERN', '#Redux', '#javascript' , '#CSS' ,'#restapi', '#HTML'],
       liveLink: 'https://rankit-frontend.vercel.app/',
       githubLink: 'https://github.com/Kratik-Sen/Rankit-frontend'
