@@ -4,47 +4,47 @@ import gsap from 'gsap'
 import './Project.css'
 export default function Projects() {
   const projects = [
-    {
+       {
       id: 1,
+      title: 'OpenShelf',
+      description: 'OpenShelf is a modern platform where users can upload, buy, and read books effortlessly. It offers seamless PDF viewing, easy book management, and a clean interface that connects readers and creators, making digital reading more accessible and enjoyable for everyone.',
+      image: './openshelf.png',
+      technologies: ['#MERN' ,'#S3 bucket','#Redis', '#javascript' ,'#restapi', '#CSS' , '#HTML'],
+      liveLink: 'https://openshelf-frontend.vercel.app/',
+      githubLink: 'https://github.com/Kratik-Sen/Openshelf-frontend'
+    },
+    {
+      id: 2,
       title: 'OneCart',
       description: `Developed a full-featured e-commerce platform using
 the MERN stack, featuring a dedicated admin dashboard, secure payment gateway integration, and
 Google Authentication for seamless user login. Implemented voice navigation for an enhanced user
 experience and used Firebase Authentication for secure login management.`,
       image: './onecart.png',
-      technologies: ['#MERN', '#googleAuth', '#javascript' ,'#restapi','#razorpay', '#tailwindCSS' , '#HTML'],
+      technologies: [ '#googleAuth', '#javascript' ,'#MERN','#cloudinary','#restapi','#razorpay', '#tailwindCSS' , '#HTML'],
       liveLink: 'https://one-cart-frontend-ojj5.onrender.com/',
       githubLink: 'https://github.com/Kratik-Sen/one-cart'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Chatly',
       description: `Built a real-time chat application using the MERN stack
 with WebSocket integration for instant message delivery and live communication between users.
 Designed a responsive and intuitive UI for seamless chatting experiences.`,
       image: './chatly.png',
-      technologies: ['#MERN', '#websocket', '#javascript' ,'#restapi', '#tailwindCSS' , '#HTML'],
+      technologies: ['#websocket','#cloudinary','#MERN', '#javascript' ,'#restapi', '#tailwindCSS' , '#HTML'],
       liveLink: 'https://chat-app-dsdv.onrender.com/',
       githubLink: 'https://github.com/Kratik-Sen/chat-app'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Best Stay Ever',
       description: `Developed a full-stack accommodation booking platform
 where users can browse, book, and manage stays. Implemented property listings, user authentication,search and filter functionality, booking management.Integrated cloud image storage and responsive design for seamless use across devices.`,
       image: './BST.png',
-      technologies: ['#MERN', '#javascript' ,'#restapi', '#tailwindCSS' , '#HTML'],
+      technologies: ['#MERN', '#javascript' ,'#restapi','#cloudinary', '#tailwindCSS' , '#HTML'],
       liveLink: 'https://best-stay-ever-project-frontend.onrender.com/',
       githubLink: 'https://github.com/Kratik-Sen/Best-stay-ever-project'
-    },
-    {
-      id: 4,
-      title: 'OpenShelf',
-      description: 'OpenShelf is a modern platform where users can upload, buy, and read books effortlessly. It offers seamless PDF viewing, easy book management, and a clean interface that connects readers and creators, making digital reading more accessible and enjoyable for everyone.',
-      image: './openshelf.png',
-      technologies: ['#MERN' , '#javascript' ,'#restapi', '#CSS' , '#HTML'],
-      liveLink: 'https://openshelf-frontend.vercel.app/',
-      githubLink: 'https://github.com/Kratik-Sen/Openshelf-frontend'
     },
     
     {
@@ -52,7 +52,7 @@ where users can browse, book, and manage stays. Implemented property listings, u
       title: 'Rankit',
       description: 'RankIt lets users compare two photos with a simple click, instantly scoring them using the Elo rating system. The platform updates a live leaderboard, making photo ranking fun, competitive, and dynamic while helping creators understand which images stand out the most.',
       image: './rankit.png',
-      technologies: ['#MERN', '#Redux', '#javascript' , '#CSS' ,'#restapi', '#HTML'],
+      technologies: [ '#Redux', '#javascript' ,'#MERN','#cloudinary', '#CSS' ,'#restapi', '#HTML'],
       liveLink: 'https://rankit-frontend.vercel.app/',
       githubLink: 'https://github.com/Kratik-Sen/Rankit-frontend'
     },
