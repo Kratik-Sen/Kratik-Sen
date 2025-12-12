@@ -12,7 +12,7 @@ the MERN stack, featuring a dedicated admin dashboard, secure payment gateway in
 Google Authentication for seamless user login. Implemented voice navigation for an enhanced user
 experience and used Firebase Authentication for secure login management.`,
       image: './onecart.png',
-      technologies: ['#react', '#mongodb', '#tailwind'],
+      technologies: ['#MERN', '#googleAuth', '#javascript' ,'#restapi','#razorpay', '#tailwindCSS' , '#HTML'],
       liveLink: 'https://one-cart-frontend-ojj5.onrender.com/',
       githubLink: 'https://github.com/Kratik-Sen/one-cart'
     },
@@ -23,7 +23,7 @@ experience and used Firebase Authentication for secure login management.`,
 with WebSocket integration for instant message delivery and live communication between users.
 Designed a responsive and intuitive UI for seamless chatting experiences.`,
       image: './chatly.png',
-      technologies: ['#react', '#restapi', '#css'],
+      technologies: ['#MERN', '#websocket', '#javascript' ,'#restapi', '#tailwindCSS' , '#HTML'],
       liveLink: 'https://chat-app-dsdv.onrender.com/',
       githubLink: 'https://github.com/Kratik-Sen/chat-app'
     },
@@ -33,16 +33,35 @@ Designed a responsive and intuitive UI for seamless chatting experiences.`,
       description: `Developed a full-stack accommodation booking platform
 where users can browse, book, and manage stays. Implemented property listings, user authentication,search and filter functionality, booking management.Integrated cloud image storage and responsive design for seamless use across devices.`,
       image: './BST.png',
-      technologies: ['#nextjs', '#supabase', '#css'],
+      technologies: ['#MERN', '#javascript' ,'#restapi', '#tailwindCSS' , '#HTML'],
       liveLink: 'https://best-stay-ever-project-frontend.onrender.com/',
       githubLink: 'https://github.com/Kratik-Sen/Best-stay-ever-project'
     },
     {
       id: 4,
+      title: 'OpenShelf',
+      description: 'OpenShelf is a modern platform where users can upload, buy, and read books effortlessly. It offers seamless PDF viewing, easy book management, and a clean interface that connects readers and creators, making digital reading more accessible and enjoyable for everyone.',
+      image: '/openshelf.png',
+      technologies: ['#MERN' , '#javascript' ,'#restapi', '#CSS' , '#HTML'],
+      liveLink: 'https://openshelf-frontend.vercel.app/',
+      githubLink: 'https://github.com/Kratik-Sen/Openshelf-frontend'
+    },
+    
+    {
+      id: 5,
+      title: 'Rankit',
+      description: 'RankIt lets users compare two photos with a simple click, instantly scoring them using the Elo rating system. The platform updates a live leaderboard, making photo ranking fun, competitive, and dynamic while helping creators understand which images stand out the most.',
+      image: '/rankit.png',
+      technologies: ['#MERN', '#Redux', '#javascript' , '#CSS' ,'#restapi', '#HTML'],
+      liveLink: 'https://rankit-frontend.vercel.app/',
+      githubLink: 'https://github.com/Kratik-Sen/Rankit-frontend'
+    },
+    {
+      id: 6,
       title: 'Tic Tac Toe',
       description: 'Tic Tac Toe is a classic two-player game built using React and CSS. Players take turns marking X or O on a 3x3 grid to achieve three in a row.',
       image: './t.png',
-      technologies: ['#nextjs', '#supabase', '#css'],
+      technologies: ['#React', '#javascript' , '#CSS' , '#HTML'],
       liveLink: 'https://tic-tac-toe-mu-ecru.vercel.app/',
       githubLink: 'https://github.com/Kratik-Sen/tic-tac-toe'
     },
