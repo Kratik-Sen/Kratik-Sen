@@ -65,7 +65,7 @@
 
 <!-- Backend & Cloud -->
 
-<img src="https://images.seeklogo.com/logo-png/31/1/amazon-web-services-aws-logo-png_seeklogo-319188.png" width="40" height="40" />
+<img src="https://www.yessinfotech.com/wp-content/uploads/2024/03/AWS-logo-png.jpg" width="40" height="40" />
 <img src="https://www.vectorlogo.zone/logos/serverless/serverless-icon.svg" width="40" height="40" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" width="40" height="40" />
 <img src="https://cloudinary-res.cloudinary.com/image/upload/website/cloudinary_web_favicon.png" width="40" height="40" />
