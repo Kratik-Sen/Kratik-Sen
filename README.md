@@ -21,19 +21,6 @@
 
 ---
 
-### 🤝 Connect With Me
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/kratik-sen" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
-  </a>
-  <a href="kratiksen064@gmail.com" target="blank">
-    <img align="center" src="https://download.logo.wine/logo/Gmail/Gmail-Logo.wine.png" alt="LinkedIn" height="30" width="40" />
-  </a>
-</p>
-
----
-
 ### 🛠️ Languages & Tools
 
 <p align="left">
@@ -84,7 +71,18 @@
 </p>
 
 ---
+### 🤝 Connect With Me
 
+<p align="left">
+  <a href="https://www.linkedin.com/in/kratik-sen" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+  </a>
+  <a href="kratiksen064@gmail.com" target="blank">
+    <img align="center" src="https://download.logo.wine/logo/Gmail/Gmail-Logo.wine.png" alt="LinkedIn" height="30" width="40" />
+  </a>
+</p>
+
+---
 ### 📊 GitHub Stats
 
 <p align="left">
