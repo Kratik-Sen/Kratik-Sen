@@ -95,6 +95,10 @@
   <img src="https://github-readme-stats.vercel.app/api?username=kratik-sen&show_icons=true&locale=en&theme=tokyonight" alt="GitHub Stats" />
 </p>
 
+<div align="center">
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+</div>
+
 ---
 
 <p align="center">
