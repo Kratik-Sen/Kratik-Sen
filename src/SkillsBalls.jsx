@@ -87,7 +87,7 @@ export default function SkillsBalls() {
     },
      {
       id: 15,
-      name: "AWS (S3, Lambda , cloudfront)",
+      name: "AWS (S3, Lambda , api gateway)",
       color: "#764abc",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw7nf-Zbr_A3Ag1wezt_x-DFuXwKf-1MllgQ&s",
     },
