@@ -5,9 +5,7 @@
 
 <img align="right" alt="Coding" width="420" src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif" />
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=kratik-sen&label=Profile%20views&color=0ea5e9&style=flat" alt="kratik-sen" />
-</p>
+
 
 ---
 
@@ -56,6 +54,7 @@
 <img src="https://www.vectorlogo.zone/logos/serverless/serverless-icon.svg" width="40" height="40" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" width="40" height="40" />
 <img src="https://cloudinary-res.cloudinary.com/image/upload/website/cloudinary_web_favicon.png" width="40" height="40" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" width="40" height="40" />
 
 <!-- API & Testing -->
 
@@ -89,9 +88,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kratik-sen&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="Top Languages" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kratik-sen&show_icons=true&locale=en&theme=tokyonight" alt="GitHub Stats" />
-</p>
+
 
 <div align="center">
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
